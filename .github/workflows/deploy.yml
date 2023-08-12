@@ -10,8 +10,8 @@ jobs:
   test:
     env:
       MONGODB_CLUSTER_ADDRESS: clustergitactionstext.6zr9b7v.mongodb.net
-      MONGODB_USERNAME: vitocos
-      MONGODB_PASSWORD: RWni3reD2NJwuK07
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     environment: testing
     runs-on: ubuntu-latest
